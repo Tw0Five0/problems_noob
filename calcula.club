@@ -1,38 +1,51 @@
 #!/bin/bash
-#Autor: NobodyMod
-#Data: 21/01/2021
-
+clear
+echo -e "\e[02;40;41m INICIANDO........ \e[0m"
+  sleep 1.5
+  clear
+  echo -e "\e[02;40;41m INICIANDO.......... \e[0m"
+  sleep 1
+  clear
+  echo -e "\e[02;40;41m INICIANDO............... \e[0m"
+  sleep 1
+  clear
+  echo -e "\e[02;40;41m INICIANDO.................. \e[0m"
+  sleep 4
+  clear
+  echo -e "\e[02;40;48m INICIADO (: \e[0m"
+  sleep 2
+  echo
 
 menu ()
 {
 
 clear
 
-echo "	_____________________________________"
+
+echo "	  ++++++++++++++++++++++++++++++++++"
+echo "		  CALCULADORA BASH".              
+echo "	           Versão Beta"                 
+echo "         Desenvolvido por @NobodyMod"
+echo "	  ++++++++++++++++++++++++++++++++++"
 echo 
-echo "		CALCULADORA BASH"
-echo "		     Versão Beta"
-echo "	       Desenvolvido por @NobodyMod"
-echo "	_____________________________________"
 echo 
-echo 
-echo "< 1 > Somar "
-echo "< 2 > Subtração "
-echo "< 3 > Multiplicação "
-echo "< 4 > Divisão "
-echo "< 5 > Raiz quadrada "
-echo "< 0 > Sair "
+echo "< 1| Somar "
+echo "< 2| Subtração "
+echo "< 3| Multiplicação "
+echo "< 4| Divisão "
+echo "< 5| Raiz quadrada "
+echo "< 0| Sair "
 echo 
 echo "Escolha uma carta:  "
 read  opcao
 
 case $opcao in
-	1) soma ;;
-	2) subtracao ;;
-	3) multiplicacao ;; 
-	4) divisao ;;
-	5) raizquad ;;
-	0) exit ;;
+	(1) soma ;;
+	(2) subtracao ;;
+	(3) multiplicacao ;; 
+	(4) divisao ;;
+	(5) raizquad ;;
+	(0) clear ;;
 esac
 
 }
@@ -55,23 +68,23 @@ echo "--------------------------------"
 echo
 
 	echo "O que deseja fazer agora?"
-	echo "< c > Continuar"
-	echo "< m >  Menu Principal"
-	echo "< s >  Sair"
+	echo " 1| Continuar"
+	echo " 2| Menu Principal"
+	echo " 3| Sair"
 	
 	echo "Escolha uma opção"
 	read op
 
-	if [ "$op" = "c" ]
+	if [ "$op" = "1" ]
 	then
 		soma
-	elif [ "$op" = "m" ]
+	elif [ "$op" = "2" ]
 	then
 		menu
-	elif [ "$op" = "s" ]
+	elif [ "$op" = "3" ]
 	then
 		clear		
-		exit 
+		clear 
 	else
 		echo " Opção Inválida! "
 	fi
@@ -96,23 +109,23 @@ echo "--------------------------------"
 echo
 
 	echo "O que deseja fazer agora?"
-	echo "< c > Continuar"
-	echo "< m >  Menu Principal"
-	echo "< s >  Sair"
+	echo " 1| Continuar"
+	echo " 2| Menu Principal"
+	echo " 3| Sair"
 	
 	echo "Escolha uma opção"
 	read op
 
-	if [ "$op" = "c" ]
+	if [ "$op" = "1" ]
 	then
 		subtracao
-	elif [ "$op" = "m" ]
+	elif [ "$op" = "2" ]
 	then
 		menu
-	elif [ "$op" = "s" ]
+	elif [ "$op" = "3" ]
 	then
 		clear		
-		exit 
+		clear 
 	else
 		echo " Opção Inválida! "
 	fi
@@ -137,23 +150,23 @@ echo "--------------------------------"
 echo
 
 	echo "O que deseja fazer agora?"
-	echo "< c > Continuar"
-	echo "< m >  Menu Principal"
-	echo "< s >  Sair"
+	echo " 1| Continuar"
+	echo " 2| Menu Principal"
+	echo " 3| Sair"
 	
 	echo "Escolha uma opção"
 	read op
 
-	if [ "$op" = "c" ]
+	if [ "$op" = "1" ]
 	then
 		multiplicacao
-	elif [ "$op" = "m" ]
+	elif [ "$op" = "2" ]
 	then
 		menu
-	elif [ "$op" = "s" ]
+	elif [ "$op" = "3" ]
 	then
 		clear		
-		exit 
+		clear 
 	else
 		echo " Opção Inválida! "
 	fi
@@ -178,23 +191,23 @@ echo "--------------------------------"
 echo
 
 	echo "O que deseja fazer agora?"
-	echo "< c > Continuar"
-	echo "< m >  Menu Principal"
-	echo "< s >  Sair"
+	echo " 1| Continuar"
+	echo " 2| Menu Principal"
+	echo " 3| Sair"
 	
 	echo "Escolha uma opção"
 	read op
 
-	if [ "$op" = "c" ]
+	if [ "$op" = "1" ]
 	then
 		divisao
-	elif [ "$op" = "m" ]
+	elif [ "$op" = "2" ]
 	then
 		menu
-	elif [ "$op" = "s" ]
+	elif [ "$op" = "3" ]
 	then
 		clear		
-		exit 
+		clear 
 	else
 		echo " Opção Inválida! "
 	fi
@@ -246,23 +259,23 @@ echo "--------------------------------"
 echo
 
 	echo "O que deseja fazer agora?"
-	echo "< c > Continuar"
-	echo "< m >  Menu Principal"
-	echo "< s >  Sair"
+	echo " 1| Continuar"
+	echo " 2| Menu Principal"
+	echo " 3| Sair"
 	
 	echo "Escolha uma opção"
 	read op
 
-	if [ "$op" = "c" ]
+	if [ "$op" = "1" ]
 	then
 		divisao
-	elif [ "$op" = "m" ]
+	elif [ "$op" = "2" ]
 	then
 		menu
-	elif [ "$op" = "s" ]
+	elif [ "$op" = "3" ]
 	then
 		clear		
-		exit 
+		clear 
 	else
 		echo " Opção Inválida! "
 	fi
