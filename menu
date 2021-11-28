@@ -18,4 +18,3 @@ clear; sleep .1
   echo -e "\e[01;37;41m Legal, eu vou ser sua tia!\e[0m"
   sleep 3
   echo
-clear
