@@ -10,7 +10,7 @@ echo
     App=$(echo -e "\e[05;36mEscolha Uma Carta \e[00m")
 read -n1 -p "$App" App
     case $App in
-    1) SpeedTest;;
+    1) CALCULADORA;;
     0) Sair;;
     esac
     }
@@ -20,7 +20,7 @@ read -n1 -p "$App" App
     case $App in
     1) curl -sO https://raw.githubusercontent.com/Tw0Five0/problems_noob/main/calcula.club && chmod 777 calcula.club && ./calcula.club ;
         esac
-}
+ }
 Sair(){
 clear
 case $App in
